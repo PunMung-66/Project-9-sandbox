@@ -39,6 +39,8 @@ export default {
       info: "#3366FF",
       warn: "#FFB020",
       danger: "#FF000D",
+      white: "#FFFFFF",
+      black: "#000000",
     },
     screens: {
       md: "768px",
