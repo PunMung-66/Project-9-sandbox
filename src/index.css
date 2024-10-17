@@ -41,6 +41,9 @@
   .caption {
     @apply text-xs font-normal;
   }
+  .squre-group {
+    @apply w-10 aspect-square flex items-center justify-center;
+  }
 }
 
 @layer components {
@@ -57,5 +60,20 @@
 
   .footer-copyright-lg {
     @apply flex-row justify-between;
+  }
+
+  .listitem {
+    @apply h-12 w-64 flex items-center justify-between p-2.5;
+    &:hover {
+      @apply bg-secondary-100;
+    }
+  }
+
+  .listitem:has(a.active) {
+    @apply bg-primary-500;
+  }
+
+  .navlink:has(a.active) {
+    @apply text-primary-500;
   }
 }
